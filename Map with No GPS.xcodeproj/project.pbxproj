@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8CE84DD82BA121C60057219C /* Map_with_No_GPSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE84DD72BA121C60057219C /* Map_with_No_GPSApp.swift */; };
+		8CE84DDA2BA121C60057219C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE84DD92BA121C60057219C /* ContentView.swift */; };
+		8CE84DDC2BA121C70057219C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CE84DDB2BA121C70057219C /* Assets.xcassets */; };
+		8CE84DDF2BA121C70057219C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CE84DDE2BA121C70057219C /* Preview Assets.xcassets */; };
+		8CE84DE12BA121C70057219C /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE84DE02BA121C70057219C /* Persistence.swift */; };
+		8CE84DE42BA121C70057219C /* Map_with_No_GPS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8CE84DE22BA121C70057219C /* Map_with_No_GPS.xcdatamodeld */; };
+		8CE84DEE2BA121C70057219C /* Map_with_No_GPSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE84DED2BA121C70057219C /* Map_with_No_GPSTests.swift */; };
+		8CE84DF82BA121C70057219C /* Map_with_No_GPSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE84DF72BA121C70057219C /* Map_with_No_GPSUITests.swift */; };
+		8CE84DFA2BA121C70057219C /* Map_with_No_GPSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE84DF92BA121C70057219C /* Map_with_No_GPSUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8CE84DEA2BA121C70057219C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CE84DCC2BA121C60057219C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CE84DD32BA121C60057219C;
+			remoteInfo = "Map with No GPS";
+		};
+		8CE84DF42BA121C70057219C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CE84DCC2BA121C60057219C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CE84DD32BA121C60057219C;
+			remoteInfo = "Map with No GPS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8CE84DD42BA121C60057219C /* Map with No GPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Map with No GPS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CE84DD72BA121C60057219C /* Map_with_No_GPSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map_with_No_GPSApp.swift; sourceTree = "<group>"; };
+		8CE84DD92BA121C60057219C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8CE84DDB2BA121C70057219C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CE84DDE2BA121C70057219C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8CE84DE02BA121C70057219C /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		8CE84DE32BA121C70057219C /* Map_with_No_GPS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Map_with_No_GPS.xcdatamodel; sourceTree = "<group>"; };
+		8CE84DE92BA121C70057219C /* Map with No GPSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Map with No GPSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CE84DED2BA121C70057219C /* Map_with_No_GPSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map_with_No_GPSTests.swift; sourceTree = "<group>"; };
+		8CE84DF32BA121C70057219C /* Map with No GPSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Map with No GPSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CE84DF72BA121C70057219C /* Map_with_No_GPSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map_with_No_GPSUITests.swift; sourceTree = "<group>"; };
+		8CE84DF92BA121C70057219C /* Map_with_No_GPSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map_with_No_GPSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CE84DD12BA121C60057219C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CE84DE62BA121C70057219C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CE84DF02BA121C70057219C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8CE84DCB2BA121C60057219C = {
+			isa = PBXGroup;
+			children = (
+				8CE84DD62BA121C60057219C /* Map with No GPS */,
+				8CE84DEC2BA121C70057219C /* Map with No GPSTests */,
+				8CE84DF62BA121C70057219C /* Map with No GPSUITests */,
+				8CE84DD52BA121C60057219C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8CE84DD52BA121C60057219C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CE84DD42BA121C60057219C /* Map with No GPS.app */,
+				8CE84DE92BA121C70057219C /* Map with No GPSTests.xctest */,
+				8CE84DF32BA121C70057219C /* Map with No GPSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CE84DD62BA121C60057219C /* Map with No GPS */ = {
+			isa = PBXGroup;
+			children = (
+				8CE84DD72BA121C60057219C /* Map_with_No_GPSApp.swift */,
+				8CE84DD92BA121C60057219C /* ContentView.swift */,
+				8CE84DDB2BA121C70057219C /* Assets.xcassets */,
+				8CE84DE02BA121C70057219C /* Persistence.swift */,
+				8CE84DE22BA121C70057219C /* Map_with_No_GPS.xcdatamodeld */,
+				8CE84DDD2BA121C70057219C /* Preview Content */,
+			);
+			path = "Map with No GPS";
+			sourceTree = "<group>";
+		};
+		8CE84DDD2BA121C70057219C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8CE84DDE2BA121C70057219C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8CE84DEC2BA121C70057219C /* Map with No GPSTests */ = {
+			isa = PBXGroup;
+			children = (
+				8CE84DED2BA121C70057219C /* Map_with_No_GPSTests.swift */,
+			);
+			path = "Map with No GPSTests";
+			sourceTree = "<group>";
+		};
+		8CE84DF62BA121C70057219C /* Map with No GPSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8CE84DF72BA121C70057219C /* Map_with_No_GPSUITests.swift */,
+				8CE84DF92BA121C70057219C /* Map_with_No_GPSUITestsLaunchTests.swift */,
+			);
+			path = "Map with No GPSUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8CE84DD32BA121C60057219C /* Map with No GPS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CE84DFD2BA121C70057219C /* Build configuration list for PBXNativeTarget "Map with No GPS" */;
+			buildPhases = (
+				8CE84DD02BA121C60057219C /* Sources */,
+				8CE84DD12BA121C60057219C /* Frameworks */,
+				8CE84DD22BA121C60057219C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Map with No GPS";
+			productName = "Map with No GPS";
+			productReference = 8CE84DD42BA121C60057219C /* Map with No GPS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8CE84DE82BA121C70057219C /* Map with No GPSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CE84E002BA121C70057219C /* Build configuration list for PBXNativeTarget "Map with No GPSTests" */;
+			buildPhases = (
+				8CE84DE52BA121C70057219C /* Sources */,
+				8CE84DE62BA121C70057219C /* Frameworks */,
+				8CE84DE72BA121C70057219C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CE84DEB2BA121C70057219C /* PBXTargetDependency */,
+			);
+			name = "Map with No GPSTests";
+			productName = "Map with No GPSTests";
+			productReference = 8CE84DE92BA121C70057219C /* Map with No GPSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8CE84DF22BA121C70057219C /* Map with No GPSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CE84E032BA121C70057219C /* Build configuration list for PBXNativeTarget "Map with No GPSUITests" */;
+			buildPhases = (
+				8CE84DEF2BA121C70057219C /* Sources */,
+				8CE84DF02BA121C70057219C /* Frameworks */,
+				8CE84DF12BA121C70057219C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CE84DF52BA121C70057219C /* PBXTargetDependency */,
+			);
+			name = "Map with No GPSUITests";
+			productName = "Map with No GPSUITests";
+			productReference = 8CE84DF32BA121C70057219C /* Map with No GPSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CE84DCC2BA121C60057219C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					8CE84DD32BA121C60057219C = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					8CE84DE82BA121C70057219C = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 8CE84DD32BA121C60057219C;
+					};
+					8CE84DF22BA121C70057219C = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 8CE84DD32BA121C60057219C;
+					};
+				};
+			};
+			buildConfigurationList = 8CE84DCF2BA121C60057219C /* Build configuration list for PBXProject "Map with No GPS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8CE84DCB2BA121C60057219C;
+			productRefGroup = 8CE84DD52BA121C60057219C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CE84DD32BA121C60057219C /* Map with No GPS */,
+				8CE84DE82BA121C70057219C /* Map with No GPSTests */,
+				8CE84DF22BA121C70057219C /* Map with No GPSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CE84DD22BA121C60057219C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CE84DDF2BA121C70057219C /* Preview Assets.xcassets in Resources */,
+				8CE84DDC2BA121C70057219C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CE84DE72BA121C70057219C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CE84DF12BA121C70057219C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CE84DD02BA121C60057219C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CE84DE12BA121C70057219C /* Persistence.swift in Sources */,
+				8CE84DDA2BA121C60057219C /* ContentView.swift in Sources */,
+				8CE84DE42BA121C70057219C /* Map_with_No_GPS.xcdatamodeld in Sources */,
+				8CE84DD82BA121C60057219C /* Map_with_No_GPSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CE84DE52BA121C70057219C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CE84DEE2BA121C70057219C /* Map_with_No_GPSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CE84DEF2BA121C70057219C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CE84DF82BA121C70057219C /* Map_with_No_GPSUITests.swift in Sources */,
+				8CE84DFA2BA121C70057219C /* Map_with_No_GPSUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8CE84DEB2BA121C70057219C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CE84DD32BA121C60057219C /* Map with No GPS */;
+			targetProxy = 8CE84DEA2BA121C70057219C /* PBXContainerItemProxy */;
+		};
+		8CE84DF52BA121C70057219C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CE84DD32BA121C60057219C /* Map with No GPS */;
+			targetProxy = 8CE84DF42BA121C70057219C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8CE84DFB2BA121C70057219C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8CE84DFC2BA121C70057219C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8CE84DFE2BA121C70057219C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Map with No GPS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Proje-2.Map-with-No-GPS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8CE84DFF2BA121C70057219C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Map with No GPS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Proje-2.Map-with-No-GPS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8CE84E012BA121C70057219C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Proje-2.Map-with-No-GPSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Map with No GPS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Map with No GPS";
+			};
+			name = Debug;
+		};
+		8CE84E022BA121C70057219C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Proje-2.Map-with-No-GPSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Map with No GPS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Map with No GPS";
+			};
+			name = Release;
+		};
+		8CE84E042BA121C70057219C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Proje-2.Map-with-No-GPSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Map with No GPS";
+			};
+			name = Debug;
+		};
+		8CE84E052BA121C70057219C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Proje-2.Map-with-No-GPSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Map with No GPS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CE84DCF2BA121C60057219C /* Build configuration list for PBXProject "Map with No GPS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CE84DFB2BA121C70057219C /* Debug */,
+				8CE84DFC2BA121C70057219C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CE84DFD2BA121C70057219C /* Build configuration list for PBXNativeTarget "Map with No GPS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CE84DFE2BA121C70057219C /* Debug */,
+				8CE84DFF2BA121C70057219C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CE84E002BA121C70057219C /* Build configuration list for PBXNativeTarget "Map with No GPSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CE84E012BA121C70057219C /* Debug */,
+				8CE84E022BA121C70057219C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CE84E032BA121C70057219C /* Build configuration list for PBXNativeTarget "Map with No GPSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CE84E042BA121C70057219C /* Debug */,
+				8CE84E052BA121C70057219C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8CE84DE22BA121C70057219C /* Map_with_No_GPS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8CE84DE32BA121C70057219C /* Map_with_No_GPS.xcdatamodel */,
+			);
+			currentVersion = 8CE84DE32BA121C70057219C /* Map_with_No_GPS.xcdatamodel */;
+			path = Map_with_No_GPS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8CE84DCC2BA121C60057219C /* Project object */;
+}
