@@ -48,6 +48,7 @@
 		8CE84DF32BA121C70057219C /* Map with No GPSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Map with No GPSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CE84DF72BA121C70057219C /* Map_with_No_GPSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map_with_No_GPSUITests.swift; sourceTree = "<group>"; };
 		8CE84DF92BA121C70057219C /* Map_with_No_GPSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map_with_No_GPSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8CE84E062BA127DB0057219C /* Map-with-No-GPS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Map-with-No-GPS-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +99,7 @@
 		8CE84DD62BA121C60057219C /* Map with No GPS */ = {
 			isa = PBXGroup;
 			children = (
+				8CE84E062BA127DB0057219C /* Map-with-No-GPS-Info.plist */,
 				8CE84DD72BA121C60057219C /* Map_with_No_GPSApp.swift */,
 				8CE84DD92BA121C60057219C /* ContentView.swift */,
 				8CE84DDB2BA121C70057219C /* Assets.xcassets */,
@@ -432,6 +434,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Map with No GPS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Map-with-No-GPS-Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To get started, find your current location.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -460,6 +464,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Map with No GPS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Map-with-No-GPS-Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To get started, find your current location.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
