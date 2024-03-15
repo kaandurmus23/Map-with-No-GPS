@@ -10,70 +10,73 @@ import MapKit
 import CoreLocation
 
 struct MapView: UIViewRepresentable {
-    @State private var locationManager = CLLocationManager()
-    @State private var region = MKCoordinateRegion()
+    var locations: [CLLocation]
 
     func makeUIView(context: Context) -> MKMapView {
         let mapView = MKMapView()
-        mapView.showsUserLocation = true
-        mapView.delegate = context.coordinator
-        locationManager.delegate = context.coordinator
-        locationManager.requestWhenInUseAuthorization()
-        locationManager.startUpdatingLocation()
+        mapView.mapType = .satellite
         return mapView
     }
 
     func updateUIView(_ view: MKMapView, context: Context) {
-        view.setRegion(region, animated: true)
-    }
+        view.removeAnnotations(view.annotations)
 
-    func makeCoordinator() -> Coordinator {
-        Coordinator(self)
-    }
-
-    class Coordinator: NSObject, CLLocationManagerDelegate, MKMapViewDelegate {
-        var parent: MapView
-
-        init(_ parent: MapView) {
-            self.parent = parent
-        }
-
-        func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-            if let location = locations.last {
-                parent.region = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 1000, longitudinalMeters: 1000)
-            }
-        }
-
-        func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-            if status == .authorizedWhenInUse {
-                manager.startUpdatingLocation()
-            }
-        }
-
-        func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-            if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
-                if let location = mapView.userLocation.location {
-                    let region = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 1000, longitudinalMeters: 1000)
-                    mapView.setRegion(region, animated: true)
-                }
-            }
+        for location in locations {
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = location.coordinate
+            view.addAnnotation(annotation)
         }
     }
 }
 
+class LocationManager: NSObject, CLLocationManagerDelegate, ObservableObject {
+    private var locationManager = CLLocationManager()
+    @Published var locations: [CLLocation] = []
+
+    override init() {
+        super.init()
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest // Set the desired accuracy
+    }
+
+    func requestLocation() {
+        locationManager.requestLocation()
+    }
+
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.last {
+            self.locations.append(location)
+        }
+    }
+
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("Error: \(error)")
+    }
+}
+
+
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
+    @ObservedObject var locationManager = LocationManager()
 
     var body: some View {
         ZStack {
-            MapView()
+            MapView(locations: locationManager.locations)
                 .edgesIgnoringSafeArea(.all)
+            Button("Use Current Location") {
+                locationManager.requestLocation()
+            }
+            .padding()
+            .background(Color.blue)
+            .foregroundColor(.white)
+            .cornerRadius(10)
+            .position(x: UIScreen.main.bounds.width / 2, y: UIScreen.main.bounds.height * (0.85))
         }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        ContentView()
     }
 }
